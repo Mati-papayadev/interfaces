@@ -3,37 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>luis buenorro</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<header>    
+    <img class="foca" src="https://64.media.tumblr.com/cf21d0965822984f8a834a87de6c366d/b6bf74c8e1b354f1-15/s250x400/d863fb908d86712285a7730b387cf35735b25b93.gifv">
+    </header> 
 <body>
-    <h1>Iker callate porfavor</h1>
-    <form action="/sumbit" method="POST">
-        <label for="name">Nombre: </label>
-        <input type="text" id="name" name="name" required> 
+    <div class="container">
+        <h1>Formulario</h1>
+        <form id="form">
 
-        <label for="apellido">Apellido: </label>
-        <input type="text" id="apellido" name="apellido" required> 
-
-        <label for="sexo">Sexo: </label>
-            <select id="sexo">
-                <option value="Homnbre">Hombre</option>
-                <option value="Mujer">Mujer</option>
+            <input 
+            placeholder="Nombre"
+            type="text" 
+            id="name" 
+            name="name" 
+            required
+            > 
+            <input 
+            placeholder="Apellido"
+            type="text" 
+            id="surname" 
+            name="surname" 
+            required
+            > 
+            <select id="sex">
+                <option value="" disabled, hidden>Sexo</option>
+                <option value="man">Hombre</option>
+                <option value="woman">Mujer</option>
                 <option value="Serrucho">Serrucho</option>
-                <option value="Diariamente">Diariamente</option>
+                <option value="daily">Diariamente</option>
             </select>
 
-        <label for="email">E-Mail: </label>
-        <input type="email" id="email" name="email" required> 
+            <input 
+            placeholder="E-Mail"
+            type="email" 
+            id="email" 
+            name="email" 
+            required
+            > 
 
-        <label for="nick">Nickname: </label>
-        <input type="text" id="nick" name="nick" required> 
-        
-        <label for="comentario">Comentario: </label>
-        <textarea id="comentario" name="comentario" required></textarea> 
+            <input 
+            placeholder="Nick"
+            type="text" 
+            id="nick" 
+            name="nick" 
+            required
+            > 
 
-        <button type="submit">Enviar</button>
-        <button type="reset">Reset</button>
-    </form>
+            <hr>
+            <textarea 
+            placeholder="Comentario pisha"
+            id="comment" 
+            name="comment" 
+            required
+            ></textarea> 
+            <hr>
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+        </form>
+     </div>
+     <script src="script.js"></script>
 </body>
 </html>
